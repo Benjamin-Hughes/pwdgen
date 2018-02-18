@@ -16,7 +16,7 @@ app.get('/api/passwords', (req, res) => {
 	console.log(`Sent ${count} passwords`);
 });
 
-app.get('*' (req, res) => {
+app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
