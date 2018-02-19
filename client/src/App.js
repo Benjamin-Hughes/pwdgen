@@ -26,9 +26,11 @@ class App extends Component {
           <h1>5 passwords</h1>
           <ul className="passwords">
             {passwords.map((password, index) => {
-              <li key={index}>
-                {password}
-              </li>
+              return(
+                <li key={index}>
+                  {password}
+                </li>
+              )
             })}
           </ul>
           <button
