@@ -10,15 +10,14 @@ class App extends Component {
   }
 
   getPasswords = () => {
-    fetch('/api/passwords')
+    fetch('http://localhost:5000/api/passwords')
     .then(res => res.json())
     .then(passwords => this.setState({ passwords }))
     .catch(error => console.log(error.message))
-    console.log(this.state.passwords.length)
   }
 
   render() {
-    const {passwords}  = this.state;
+    const {passwords} = this.state;
 
     return(
       <div className="App">
