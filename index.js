@@ -26,7 +26,7 @@ app.get('*', (req, res) => {
 	res.sendFile(path.join(__dirname + '/client/build/index.html'));
 });
 
-const port = 5000;
+const port = 8080;
 app.listen(port);
 
 console.log(`Password generator listening on port ${port}`);
